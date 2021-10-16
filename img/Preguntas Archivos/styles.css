@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #5b9ac4;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*# sourceMappingURL=styles.css.map*/

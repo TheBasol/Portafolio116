@@ -16,24 +16,27 @@
     </header>
     <nav class="nav">
         <div class="contenedor">
-            <a href="#">Proyectos</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#">Blog</a>
-            <a href="#">Contactame</a>    
+            <a href="#footer">Contactame</a>    
         </div>
     </nav>
 
-    <section class="descripcion">
+
+     <section class="descripcion">
         <div class="contenedor">
-            <img src="img/doge2.png" alt="yo">
+            <div class="imagen_contenedor">
+                <img src="img/doge2.png" alt="yo">   
+            </div>  
             <div class="descripcion_contenido">
                 <h2 class="titulo">Nombre</h2>
                 <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nostrum aperiam aliquid cum tempora quos tenetur provident ipsam asperiores. Enim optio, cupiditate excepturi error autem odio animi possimus ratione ex!</p>
             </div>
         </div>
-
     </section>
 
-    <section class="proyectos">
+
+    <section class="proyectos" id="proyectos">
         <h2 class="titulo">Proyectos</h2>
         <div class="contenedor_cards">
             <div class="card">
@@ -43,7 +46,7 @@
                     <p>Realiza cotizaciones con las 10 Criptomonedas mas populares gracias a una api</p>
                     <div class="boton">
                         <a href="https://angry-northcutt-8a9ba8.netlify.app/" target="_blank">Ver Pagina</a>
-                        <a href="#">Ver Codigo</a>
+                        <a href="https://github.com/TheBasol/CotizadorCripto" target="_blank">Ver Codigo</a>
                     </div>
                     
                 </div>
@@ -55,7 +58,7 @@
                     <p>Pagina Web responsive sobre Bienes Raices hecha con GRID</p>
                     <div class="boton">
                         <a href="https://thebasol.github.io/bienesRaices/" target="_blank">Ver Pagina</a>
-                        <a href="#">Ver codigo</a>
+                        <a href="https://github.com/TheBasol/bienesRaices" target="_blank">Ver codigo</a>
                     </div>
                     
                 </div>
@@ -67,7 +70,7 @@
                     <p>Pagina Web responsive sobre una Pizzeria hecha con GRID</p>
                     <div class="boton">
                         <a href="https://thebasol.github.io/Pizzeria116/" target="_blank">Ver Pagina</a>
-                        <a href="#">Ver Codigo</a>
+                        <a href="https://github.com/TheBasol/Pizzeria116" target="_blank">Ver Codigo</a>
                     </div>
 
                 </div>
@@ -79,28 +82,28 @@
                     <p>Pagina Web Responsive de un blog de viajes hecho con Flexbox</p>
                     <div class="boton">
                         <a href="https://thebasol.github.io/BlogVIajes/" target="_blank">Ver Pagina</a>
-                        <a href="#">Ver Codigo</a>
+                        <a href="https://github.com/TheBasol/BlogVIajes" target="_blank">Ver Codigo</a>
                     </div>
 
                 </div>
             </div>
             <div class="card">
-                <img src="img/doge2.png" alt="">
+                <img src="img/crud.png" alt="">
                 <div class="contenid_card">
                     <h3>CRUD</h3>
-                    <p>Un CRUD con javascript utilizando json server</p>
+                    <p>Un CRUD en javascript utilizando JSON SERVER con el framework Tailwind CSS</p>
                     <div class="boton">
 
                     </div>
                     <div class="boton">
-                        <a href="#">Ver codigo</a>
+                        <a href="https://github.com/TheBasol/CRUD116" target="_blank">Ver codigo</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="contenedor">
             <div>
                 <h3>Redes</h3>
@@ -109,9 +112,19 @@
             </div>
             <div>
                 <h3>Contactame</h3>
+                <form class="formulario" id="formulario">
+                    <input type="text" placeholder="Nombre" class="input" id="nombre">
+                    <input type="email" placeholder="Correo" class="input" id="correo">
+                    <textarea id="texto"></textarea>
+                    <input type="submit" class="botonS">
+                </form>
+                <a href="#" id="send"></a>
             </div>
         </div>
     </footer>
 
+    <script src="js/basicScroll.min.js"></script>
+    <script src="js/inicia-scroll.js"></script>
+    <script src="js/submit.js"></script>
 </body>
 </html>
