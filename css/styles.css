@@ -99,6 +99,7 @@ h3{
 
 .descripcion .contenedor img{
     min-width: 100%;
+    min-height: 100%;
 }
 
 .descripcion_contenido{
