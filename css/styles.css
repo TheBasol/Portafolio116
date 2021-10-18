@@ -89,12 +89,16 @@ h3{
     padding: 4rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 2fr;
+    grid-template-rows: 30% 1fr;
 }
 
 .descripcion .contenedor{
     text-align: center;
     margin: 2rem 0;
+}
+
+.descripcion .contenedor img{
+    min-width: 100%;
 }
 
 .descripcion_contenido{
@@ -104,21 +108,8 @@ h3{
 }
 
 .descripcion_contenido h2{
-    margin:2rem 0;
+    margin:1.5rem 0;
 }
-
-.imagen_contenedor{
-   margin-bottom: -10px; 
-}
-
-@media (min-width:540px) and (max-width:1099px){
-    .imagen_contenedor{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-}
-
 
 /* Escritorio */
 @media screen and (min-width:1100px){
