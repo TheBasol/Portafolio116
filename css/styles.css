@@ -32,15 +32,15 @@ body {
 }
 
 h1{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .header{
@@ -85,26 +85,14 @@ h3{
     padding: 1rem 0;
 }
 
-.descripcion .contenedor{
-    padding: 4rem 1rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30% 1fr;
-}
-
-.descripcion .contenedor{
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.descripcion .contenedor img{
-    min-width: 100%;
-    min-height: 100%;
+.descripcion{
+    padding: 2rem;
 }
 
 .descripcion_contenido{
     background-color:var(--claro);
     border-radius: 0 0 5px 5px;
+    font-size: 1.2rem;
     padding: 1rem;
 }
 
@@ -115,17 +103,21 @@ h3{
 /* Escritorio */
 @media screen and (min-width:1100px){
 
-    .descripcion .contenedor{
-        padding: 4rem 3rem;
-        display: grid;
-        grid-template-columns: 30% 2fr;
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
+    .descripcion .contenedor{
+        width: 80vw;
+    }
+
     .descripcion_contenido{
         padding: 2rem;
-        background-color: var(--claro);
-        border-radius: 5px;
+        font-size: 1.5rem;
     }
+
 }
 
 
@@ -166,6 +158,7 @@ h3{
 .contenid_card{
     display: flex;
     padding: 1rem;
+    font-size: 1.2rem;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -185,10 +178,6 @@ h3{
     margin-top: 0.8rem;
     font-weight: bold;
     border-radius: 5px;
-}
-
-.contenid_card p{
-    padding: 1rem 0 0;
 }
 
 .boton{
