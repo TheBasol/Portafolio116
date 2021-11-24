@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font: 1.4em/1.8 "Anton", sans-serif;
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu{
+    width: 35px;
+    margin-right: 20px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.menu_active{
+    margin-right: -20px;
+    padding-top:20px;
+    padding-left: 20px;
+    background-color: rgb(42,42, 42);
+    box-shadow: 2px 0 5px 2px rgb(66, 66, 66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width:550px){
+
+    .menu_active{
+        width: 100vw;
+    }
+
+}
+
+.menu_active ul{
+    padding: 40px 0 20px 0;
+    list-style: none;
+}
+
+li a{
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover{
+    background-color: rgb(228, 228, 228);
+    color: rgb(42,42, 42);
+}
+
+.active{
+    transform: translate(600px);
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0,0.5);
+    transition: all .5s ease;
+}
+
+.opacityBtn{
+    opacity: 0.1;
+    transition: all .5s ease;
+}
+
+.back{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.menu_icon{
+    width: 40px;
+    height: 8px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+.menu_active div div{
+    background-color: white;
+}
+
+.title{
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+.sub_title{
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.blog{
+    padding-left: 1rem;
+    margin-bottom: 20px;
+}
+
+.blog button{
+    padding: 0.5rem;
+    background-color: #E5E5E5;
+    border: solid 1px blue;
+    border-radius: 5px;
+}
