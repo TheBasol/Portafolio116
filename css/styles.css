@@ -26,7 +26,9 @@ html {
 body {
     min-height: 100%;
     font: 1.4em/1.8 "Anton", sans-serif;
-    background-color: #E5E5E5;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     margin: 0;
     padding: 0;
 }
@@ -44,7 +46,7 @@ h3{
 }
 
 .header{
-    background-image: url('../img/fondo.jpg');
+    background-image: url('../img/fondo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -56,8 +58,11 @@ h3{
 }
 
 .header .contenedor{
-    color: rgb(255, 248, 220);
-    margin: 2rem;
+    color: #ffffff;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header .contenedor h1{
@@ -66,6 +71,7 @@ h3{
 
 .header .contenedor p{
     transform: translateY(var(--texto-pos));
+    font-weight: bolder;
 }
 
 .nav{
@@ -88,6 +94,7 @@ h3{
 .descripcion{
     margin: 1rem;
     background-color:var(--claro);
+    border-radius: 5px;
 }
 
 .contenedor .titulo{
@@ -126,7 +133,8 @@ h3{
 .grid3{
     grid-column: 1 / 3;
     padding: 1rem;
-    background-color: rgb(184, 52, 52);
+    background-color: rgb(230, 84, 84);
+    border: solid 2px #130F0B;
 }
 
 span{
@@ -166,6 +174,7 @@ span{
 
 .proyectos .titulo{
     text-align: center;
+    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -232,6 +241,9 @@ span{
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    box-shadow: -1px -4px 14px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -4px 14px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -4px 14px 1px rgba(0,0,0,0.75);
 }
 
 .footer .contenedor{
