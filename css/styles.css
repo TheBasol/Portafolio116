@@ -21,6 +21,7 @@ img {
 
 html {
     min-height: 100%;
+    font-size: 70%;
 }
 
 body {
@@ -87,7 +88,7 @@ h3{
 .nav a{
     text-decoration: none;
     color: var(--claro);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 1rem 1rem;
 }
 
@@ -98,14 +99,14 @@ h3{
 }
 
 .contenedor .titulo{
-    margin-top:1.5rem;
+    padding-top:1.5rem;
     text-align: center;
     font-size: 1.8rem;
 }
 
 .descripcion_contenido{
     border-radius: 0 0 5px 5px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: grid;
     grid-template:  minmax(auto,300px) repeat(2,auto) / repeat(2,auto);
 }
@@ -141,33 +142,6 @@ span{
     font-weight: 800;
 }
 
-/* Escritorio */
-@media screen and (min-width:1100px){
-
-    .descripcion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .descripcion_contenido{
-        padding: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .grid1{
-        grid-column: 2/ 3;
-        grid-row: 1/2;
-    }
-
-    .grid2{
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-
-}
-
-
 .proyectos{
     display: grid;
 }
@@ -176,6 +150,7 @@ span{
     text-align: center;
     margin-top: 4rem;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .contenedor_cards{
@@ -197,7 +172,7 @@ span{
 .card img{
     display: block;
     border-radius: 5px 5px 0 0;
-    padding: 1rem 1rem;
+    border-bottom: 1px solid #130F0B;
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -206,7 +181,7 @@ span{
 .contenid_card{
     display: flex;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1em;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -215,6 +190,7 @@ span{
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 1.2em;
 }
 
 .contenid_card a{
@@ -222,7 +198,7 @@ span{
     text-decoration: none;
     color: var(--secundarioHigh);
     background-color: var(--primario);
-    padding: 0.5rem;
+    padding: 0.5em;
     margin-top: 0.8rem;
     font-weight: bold;
     border-radius: 5px;
@@ -255,6 +231,7 @@ span{
 
 .contenedor div h3{
     margin-bottom: 1rem;
+    font-size: 1.2em;
 }
 
 .contenedor div a{
@@ -288,7 +265,47 @@ textarea{
     padding: 0.5rem;
 }
 
+
+/* Escritorio */
 @media screen and (min-width:1100px){
+
+    html{
+        font-size: 100%;
+    }
+
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descripcion_contenido{
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .grid1{
+        grid-column: 2/ 3;
+        grid-row: 1/2;
+    }
+
+    .grid2{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .contenid_card h3{
+        font-size: 0.8em;
+    }
+
+    .contenid_card p{
+        font-size: 0.8em;
+    }
+
+    .contenid_card a{
+        font-size: 0.8em;
+    }
+
     input{
         width: 80%;
         padding: 1rem;
@@ -305,3 +322,5 @@ textarea{
         width: 80%;
     }
 }
+
+
